@@ -56,7 +56,17 @@ main #upload_pdf{
 main #button_enviar{
    width: 6.7rem;
    height: 1.8rem;
+   border: none;
+   background-color: #D9D9D9;
+   border-radius: .3rem;
+}
 
+main #button_enviar:hover{
+   background-color: #BEF6CB;
+   transition: .2s;
+   cursor: pointer;
+   border: none;
+   border-radius: .3rem;
 }
 
 main .enviar_arquivo input{
