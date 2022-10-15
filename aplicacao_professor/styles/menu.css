@@ -1,26 +1,17 @@
-<<<<<<< HEAD
-=======
 /*Container do menu*/
->>>>>>> 443565afed9647c958732f51091816da310bf1ce
 .menu_container{
    background-color: #3C6100;
    width: 100%;
    height: 4rem;
    display: flex;
    justify-content: space-between;
-<<<<<<< HEAD
-   align-items: center;   
-=======
    align-items: center;
->>>>>>> 443565afed9647c958732f51091816da310bf1ce
 }
 
 .menu_container ul li{
    list-style: none;
    display: inline-block;
    margin: auto 1rem;
-<<<<<<< HEAD
-=======
    padding: 0 1.4rem;
 }
 
@@ -32,20 +23,16 @@
 
 .menu_container ul li a:last-child{
    background-color: #3C6100;
->>>>>>> 443565afed9647c958732f51091816da310bf1ce
 }
 
 .menu_container img{
    margin: auto .5rem;
 }
 
-<<<<<<< HEAD
-=======
 .menu_container #btnHome{
    margin-left: 2.3rem;
 }
 
->>>>>>> 443565afed9647c958732f51091816da310bf1ce
 .menu_container > img{
    margin: auto 3rem;
 }
@@ -54,30 +41,11 @@
    margin-right: 3rem;
 }
 
-<<<<<<< HEAD
-=======
 /* campo de busca */
->>>>>>> 443565afed9647c958732f51091816da310bf1ce
 #divBusca{
    background-color: #fff;
    border: solid 1px;
    border-radius: 5px;
-<<<<<<< HEAD
-   width: 15rem;
-   align-items: center;
-   display: flex; 
- }
-
- #divBusca input{
-   border-radius: 5px;
- }
-
- #divBusca img{
-   margin: auto;
- }
-
- #txtBusca{
-=======
    width: 10rem;
    height: 1.5rem;
    align-items: center;
@@ -93,94 +61,11 @@
 }
 
 #txtBusca{
->>>>>>> 443565afed9647c958732f51091816da310bf1ce
    padding-left: 5px;
    font-style: italic;
    color: #7B7B7B;
    font-size: 18px;
    border: none;
-<<<<<<< HEAD
-   height: 1.7rem;
-   width: 12rem;
- }
-
- #btnMenu {
-   cursor: pointer;
-   padding: 5px;
-   transition: all 0.5s;
-}
-
-#btnMenu:hover {
-   border-radius: 50%;
-   cursor: pointer;
-   background-color: #3C6100;
-}
-
-#btnMenu:active {
-   background-color: #0CA42E;
-}
-
-#btnClose {
-   padding: 8px;
-   display: flex;
-   margin: auto;
-   color: #fff;
-   font-size: 20px;
-   font-weight: bold;
-}
-
-#btnClose:active {
-   background-color: #0CA42E;
-   border-radius: 100%;
-}
-
-.menu {
-   position: fixed;
-   top: 0;
-   height: 100%;
-   background-color: #000;
-   text-align: center;
-   
-}
-
-.menu ul {
-   list-style: none;
-   display: block;
-   margin-top: .8rem;
-   
-}
-
-.menu ul li {
-   display: block;
-   width: 85%;
-   align-items: center;
-   padding: .3rem;
-}
-
-.menu ul li img {
-   display: block;
-   margin: auto;
-}
-
-.menu ul li a {
-   transition: 0.3s;
-   display: block;
-   color: #fff;
-   font-size: 14pt;
-   text-decoration: none;
-   padding: .3rem;
-}
-
-.menu ul li a:hover {
-   background-color: rgb(49, 54, 85);
-}
-
-.effect {
-   transition: margin 0.4s;
-}
-
-
-=======
    height: 1.3rem;
    width: 7.6rem;
 }
@@ -192,4 +77,3 @@
 .notificacion_profile img{
    padding: 0 1rem;
 }
->>>>>>> 443565afed9647c958732f51091816da310bf1ce

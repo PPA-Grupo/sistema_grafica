@@ -1,93 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Recebidos</title>
-   <link rel="stylesheet" href="../styles/style.css">
-   <script src="../js/menu.js" defer></script>
-
-</head>
-<body>
-   <header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Notificações</title>
+    <script src="../js/menu.js" defer></script>
+  </head>
+  <body>
+    <header>
       <nav>
-         <div class="menu_container">
-            <img src="../image/icon-menu-hamburguer.svg" alt="Menu lateral - hamburguer" id="btnMenu">
+        <div class="menu_container">
+          <a href="../index.php">
+            <img src="../image/icon-home.svg" alt="Botão home" id="btnHome" />
+          </a>
 
-            <div id="menu" class="menu effect">
-               <nav>
-                  <ul>
-                     <li>
-                        <a href="#"> <img src="../image/icon-recebidos.svg" alt="Icone de recebidos" srcset="">
-                           Recebidos
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="../image/icon-prova.svg" alt="Icone de prova" srcset="">
-                           Prova
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="../image/icon-atividade.svg" alt="Icone de atividades" srcset="">
-                           Atividade
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="../image/icon-apostila.svg" alt="Icone de apostilas" srcset="">
-                           Apostila
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="../image/icon-impressos.svg" alt="Icone de impressos" srcset="">
-                           Impresso
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="../image/icon-naoImpresso.svg" alt="Icone de não impressos" srcset="">
-                           Não impresso
-                        </a>
-                     </li>
-                  </ul>
-                  
-                  <div>
-                     <img src="../image/buuton-close.svg" alt="butão voltar" id="btnClose">
-                  </div>
-               </nav>
-           </div>
+          <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Pesquisar..." />
+            <img src="../image/icon-lupa.svg" id="btnBusca" alt="Buscar" />
+          </div>
 
-            <div id="divBusca">
-               <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
-               <img src="../image/icon-lupa.svg" id="btnBusca" alt="Buscar"/>
-             </div>
-
-            <ul>
-               <li> 
-                  <a href="../index.php"> <img src="../image/icon-home.svg" alt="Icone da home-page"> 
-                  </a>  
-               </li>
-               <li> 
-                  <a href="../src/notificacoes.php"><img src="../image/icon-notification.svg" alt="Icone de notificação">
-                  </a>
-               </li>
-               <li>
-                  <a href="#"><img src="../image/icon-profile.svg" alt="Icone do perfil">
-                  </a>
-               </li>
-            </ul>
-         </div>
-        
+          <ul>
+            <li>
+              <a href="../src/page_impressos.php"> Impressos </a>
+            </li>
+            <li>
+              <a href="../src/page_meus_envios.php"> Meus envios </a>
+            </li>
+            <li>
+              <a href="../src/enviar_arquivo.php"> Novo envio </a>
+            </li>
+          </ul>
+          <div class="notificacion_profile">
+            <a href="../src/notificacoes.php"
+              ><img src="../image/icon-notification.svg" alt="Icone de notificação" />
+            </a>
+            <a href="#"><img src="../image/icon-profile.svg" alt="Icone do perfil" /> </a>
+          </div>
+        </div>
       </nav>
-   </header>
-   <main>
-         <div class="container_notificacoes">          
-
-         <?php
+    </header>
+    <main>
+      <div class="container_notificacoes">
+      <?php
          include "config.php";
 
          //realiza query de consulta
@@ -118,8 +74,8 @@
                      <hr>
                <?php }
          }
-         ?>      
+         ?>    
       </div>
-   </main>
-</body>
+    </main>
+  </body>
 </html>
