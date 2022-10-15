@@ -1,5 +1,6 @@
 @import url(./menu.css);
 @import url(./formataca.css);
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 /* @import url(./page_enviarArquivo.css); */
 @import url(./pag_notificacao.css);
+@import url(./conteudo_style.css);
