@@ -1,0 +1,27 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   /*Cores para informar o estado do arquivo*/
+   --azul-arquivo-recebido: #1C1292;
+   --vermelho-nao-impresso: #A40C0C;
+   --verde-impresso: #0CA42E;
+   --amarelo-prazo-proximo: #E2DA0D;
+
+
+}
+
+body{
+   background: linear-gradient(153.92deg, rgba(85, 137, 0, 0.996078) 12.49%, rgba(27, 43, 0, 0.921569) 95.86%);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   font-family: 'Inter', sans-serif;
+   font-weight: normal;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+body main{
+   margin-top: 4rem;
+}

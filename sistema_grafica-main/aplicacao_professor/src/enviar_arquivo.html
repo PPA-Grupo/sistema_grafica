@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/page_enviarArquivo.css">
+   <title>Enviar arquivo para impressão</title>
+   <script src="../js/menu.js" defer></script>
+</head>
+<body>
+   <header>
+      <nav>
+         <div class="menu_container">
+            <a href="../index.html">
+               <img src="../image/icon-home.svg" alt="Botão home" id="btnHome">
+            </a>
+
+            <div id="divBusca">
+               <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+               <img src="../image/icon-lupa.svg" id="btnBusca" alt="Buscar"/>
+             </div>
+
+            <ul>
+               <li> 
+                  <a href="../src/page_impressos.html"> Impressos 
+                  </a>   
+               </li>
+               <li> 
+                  <a href="../src/page_meus_envios.html"> Meus envios 
+                  </a>   
+               </li>
+               <li> 
+                  <a href="../src/enviar_arquivo.html"> Novo envio 
+                  </a>   
+               </li>
+
+            </ul>
+            <div class="notificacion_profile">
+               <a href="../src/notificacoes.html"><img src="../image/icon-notification.svg" alt="Icone de notificação">
+               </a>
+               <a href="#"><img src="../image/icon-profile.svg" alt="Icone do perfil" onclick="menuDropDown()">
+               </a>
+            </div>
+            
+         </div>
+         
+      </nav>
+   </header>
+   <main>
+         
+      <div class="container_titlAssun">
+         <label for="">Título: </label>
+         <input type="text" name="titulo" id="titulo" placeholder="Adicione um título"/>
+         <br/>
+         <label for="">Assunto: </label>
+         <input type="text" name="assunto" id="assunto" placeholder="Informe o assunto do arquivo"/> 
+      </div>         
+
+      <div class="info_envio">
+         <div>
+            <div>
+               <label for="cars">Tipo do documento:</label> 
+               <br/>
+               <select id="tipo_docs">
+                  <option value="prova" >Prova </option>
+                  <option value="avaliacao"> Avaliacao </option>
+                  <option value="apostila"> Apostila </option>
+               </select>
+            </div>
+
+            <div>
+               <legend>Qual a cor das impressões:</legend>
+               <input type="radio" name="cor" id="preto_branco" placeholder="Preto e branco" checked/> 
+               <label for="preto_branco">Preto e branco</label>
+               <input type="radio" name="cor" id="colorido" placeholder="Colorido"/>
+               <label for="colorido">Colorido</label>
+            </div>
+            
+         </div>
+       
+         <div class="div_numCopia">
+            <input type="number" placeholder="Nº de cópias:">
+            <input type="date">
+         </div>
+         
+      </div>
+
+      <div class="enviar_arquivo">  
+         <input type="file" name="upload_pdf" id="upload_pdf" accept=".pdf"/>
+         <input type="submit" name="enviar" onclick="openModal()" value="Enviar" id="button_enviar"/>   
+      </div>
+      <div class="modal-container">
+         <div class="modal">
+            <h2>Arquivo enviado</h2>
+            <hr />
+            <span>Seu arquivo foi enviado com sucesso!</span>
+            <hr/>
+            <div class="buttons">
+               <button class="buttonOk" onclick="closseModal()">OK</button>
+            </div>
+         </div>
+      </div>
+      <div class="action">
+         <div class="profile" onclick="menuDropDown()">
+            <img src="./image/icon-profile.svg">
+         </div>
+         <div class="menu">
+            <h3>Nome do usuário<br><span>Gerenciar conta</span></h3>
+            <ul>
+               <li><img src="https://img.icons8.com/external-inkubators-detailed-outline-inkubators/344/external-profile-ecommerce-user-interface-inkubators-detailed-outline-inkubators.png" alt=""><a href="#">Criar conta</a></li>
+               <li><img src="https://img.icons8.com/ios/344/exit.png" alt=""><a href="#">Sair da conta</a></li>
+            </ul>
+         </div>
+      </div>
+   </main>
+</body>
+</html>
