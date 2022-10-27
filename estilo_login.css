@@ -1,0 +1,85 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(18, 150, 29), rgb(4, 54, 12));
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding: 6px;
+    border: 2px solid rgb(17, 163, 29);
+    border-radius: 3px;
+    resize: vertical;
+    outline: none;
+}
+
+input[type=password],
+select {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding: 6px;
+    border: 2px solid rgb(17, 163, 29);
+    border-radius: 3px;
+    resize: vertical;
+    outline: none;
+}
+
+input[type=submit],
+select {
+    margin-top: 20px;
+    width: 200px;
+    background-color: rgb(17, 163, 29);
+    color: white;
+    border: 1px, black;
+    border-radius: 2px;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+
+
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.arealogin {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: #ccc;
+    width: 80vh;
+    height: 50vh;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 35px;
+    color: gray;
+    font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(43, 43, 43);
+}
+
+a{
+    text-decoration: none;
+    
+}
