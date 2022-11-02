@@ -21,8 +21,11 @@
    margin: auto;
 }
 
-.menu_container ul li a:last-child{
-   background-color: #3C6100;
+.menu_container ul li:last-child{
+   background-color: #1F3205;
+   padding: .65rem;
+   border-radius: 4px;
+   margin-right: 3rem;
 }
 
 .menu_container img{
@@ -35,10 +38,6 @@
 
 .menu_container > img{
    margin: auto 3rem;
-}
-
-.menu_container ul li:last-child{
-   margin-right: 3rem;
 }
 
 /* campo de busca */
@@ -58,6 +57,7 @@
 
 #divBusca img{
    margin: auto;
+   width: 15%;
 }
 
 #txtBusca{
@@ -76,4 +76,105 @@
 
 .notificacion_profile img{
    padding: 0 1rem;
+}
+
+/* style para menu-drop-down do icon perfil */
+.action{
+   position: fixed;
+   top: .1rem;
+   right: 2rem;
+}
+
+.action .profile{
+   position: relative;
+   width: 4rem;
+   height: 4rem;
+   overflow: hidden;
+}
+
+.action .profile img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   object-fit: cover;
+}
+
+.action .menu{
+   position: absolute;
+   top: .1rem;
+   right: -.4rem;
+   padding: 1rem 1.3rem;
+   background: #fff;
+   width: 200px;
+   box-sizing: 0 5px 25px rgba(0,0,1);
+   border-radius: 15px;
+   transition: 0.5s;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.action .menu.active{
+   top: 80px;
+   visibility: visible;
+   opacity: 1;
+}
+
+.action .menu::before{
+   content: '';
+   position: absolute;
+   top: -5;
+   right: 28px;
+   width: 20px;
+   height: 20px;
+   background: #fff;
+   transform: rotate(45deg);
+}
+
+.action .menu h3{
+   width: 100%;
+   text-align: center;
+   font-size: 18px;
+   padding: 20px 0;
+   font-weight: 500;
+   font-size: 18px;
+   color: black;
+   line-height: 1.2rem;
+}
+
+.action .menu h3 span{
+   font-size: 14px;
+   color: #7B7B7B;
+   font-weight: 400;
+}
+
+.action .menu ul li{
+   list-style: none;
+   padding: 10px 0;
+   border-top: 1px solid rgba(0, 0, 0, 0.5);
+   direction: flex;
+   align-items: center;
+}
+.action .menu ul li img{
+   max-width: 20px;
+   margin-right: 10px;
+   opacity: 0.5;
+   transition: 0.5s;
+}
+
+.action .menu ul li img{
+   opacity: 1;
+}
+
+.action .menu ul li a{
+   display: inline-block;
+   text-decoration: none;
+   color: #555;
+   font-weight: 500;
+   transition: 0.5s;
+}
+
+.action .menu ul li:hover a {
+   color: #009220;
 }

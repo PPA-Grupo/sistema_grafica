@@ -4,10 +4,11 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Notificações</title>
+   <title>Arquivo impresso</title>
    <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/style_page_impressos.css">
    <script src="../js/menu.js" defer></script>
-
+   <script src="../js/popup_page_impresso.js" defer></script>
 </head>
 <body>
    <header>
@@ -85,28 +86,49 @@
       </nav>
    </header>
    <main>
-         <div class="container_notificacoes">
-            <div class="nova_notificacao">
-               <div class="icon_style">
-                  <img src="../image/icon-profile.svg" alt="Avatar do perfil "/>
-                  <p>Nome do remetente</p>
-               </div>
-
-               <div class="info_notificacao">
-                  <div class="info_arquivo_style">
-                     <h3>Avaliação de português 3º ano</h3>
+      <div class="content_container">   
+         <div class="info_arquivo">
+            <h2>Título: Título do arquivo</h2>
+            <div class="div_info">
+               <div class="info_remetente">
+                  <img src="../image/icons8-pessoa-do-sexo-masculino-90.png" alt="Ícone de avatar do perfil">
+                  <div>
+                     <h3>Nome do Professor remetente</h3>
+                     <h4>example@ifba.edu.br</h4>
                   </div>
-                  <div class="info_arquivo_style">
-                     <h4>Atividade avaliativa para a turma 732 do curso técnico em informática</h4>
-                  </div>
+                  
                </div>
-               <div class="info_add">
-                  <p>10:40</p>
-                  <p>Hoje</p>
-                  <span>1</span>
+               <div class="info_limites">
+                  <h4>Prazo estipulado: 00/00/0000</h4>
+                  <h4>Número de cópias: Nº</h4>
                </div>
             </div>
+            
+            <h3>Assunto: Aqui vai o assunto tratado no arquivo</h3>
+            <div class="style_icon_arquivo">
+               <img src="../image/icon_pdf.png" alt="Arquivo recebido para impressão" class="img_arquivo_recebido">
+            </div>
+
+            <button class="btn_confirme" value="btn_confirme" name="btn_confirme" id="btn_confirme">Confirmar entrega</button>
          </div>
+      </div>
    </main>
+
+   <!-- Popup para negação de impressão -->
+   <div class="div_popup">
+      <div class="popup">
+         <div class="popup_close"> X </div>
+         <div class="popup_container">
+            <h3>Para confirmar a entrega informe a senha de usuário</h3>
+            <h4>Usuário: Nome do usuário</h4>
+            <h4>SIAP: 0000000</h4>
+            <form action="">
+               <input type="password" placeholder="Insira sua senha aqui" name="mensagem_esclarecimento" id="senha_usuario"/>
+
+               <button type="submit" name="Confirmar" value="Confirmar" class="popup_button" id="confirmar">Confirmar</button>
+            </form>
+         </div>
+      </div>
+   </div>
 </body>
 </html>

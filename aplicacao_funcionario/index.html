@@ -7,6 +7,7 @@
    <title>Recebidos</title>
    <link rel="stylesheet" href="./styles/style.css">
    <script src="./js/menu.js" defer></script>
+   <script src="./js/profile.js" defer></script>
 </head>
 <body>
    <header>
@@ -63,7 +64,7 @@
             <div id="divBusca">
                <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
                <img src="./image/icon-lupa.svg" id="btnBusca" alt="Buscar"/>
-             </div>
+            </div>
 
             <ul>
                <li> 
@@ -75,181 +76,55 @@
                   </a>
                </li>
                <li>
-                  <a href="#"><img src="./image/icon-profile.svg" alt="Icone do perfil">
-                  </a>
+                  <img src="./image/icon-profile.svg" alt="Icone do perfil" onclick="menuDropDown()">
                </li>
             </ul>
          </div>
          
       </nav>
    </header>
+   <div class="action">
+      <div class="profile" onclick="menuDropDown()">
+         <img src="./image/icon-profile.svg">
+      </div>
+      <div class="menu_perfil">
+         <h3>Nome do usuário<br><span>Gerenciar conta</span></h3>
+         <ul>
+            <li><img src="https://img.icons8.com/external-inkubators-detailed-outline-inkubators/344/external-profile-ecommerce-user-interface-inkubators-detailed-outline-inkubators.png" alt=""><a href="#">Criar conta</a></li>
+            <li><img src="https://img.icons8.com/ios/344/exit.png" alt=""><a href="#">Sair da conta</a></li>
+         </ul>
+      </div>
+   </div>
+
    <main>
       <div class="container_arquivoRece">
          <div class="status_arquivo">
 
          </div>
 
-         <div class="identificacao_envio">
-            <div class="ideti_remetente">
-               <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
+         <a href="./src/arquivo_recebido.html">
+            <div class="identificacao_envio">
+               <div class="ideti_remetente">
+                  <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
 
-               <span>
-                  <h5 class="nonme_usuario">Nome do professor</h5>                 
-                  <h5 class="email_remetenye"> email@ifba.edu.br </h5>
-               </span>
+                  <span>
+                     <h5 class="nonme_usuario">Nome do professor</h5>                 
+                     <h5 class="email_remetenye"> email@ifba.edu.br </h5>
+                  </span>
+               </div>
+                  
+               <span>TIPO</span>
             </div>
-               
-            <span>TIPO</span>
-         </div>
-   
-         <div class="info_arquivo">
-         <div>
-            <h4 class="text_title">Titulo: Titulo do arquivo</h5>
-            <h5 class="text_subject">Assunto: Assunto do arquivo</h5>
-            <h5 class="text_number_of_pages">N° de copias: 20</h5>
-         </div>
-         <h5>Até dd/mm/aaa</h5>
-         </div>
-      </div>
-
-      <div class="container_arquivoRece">
-         <div class="status_arquivo">
-
-         </div>
-
-         <div class="identificacao_envio">
-            <div class="ideti_remetente">
-               <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
-
-               <span>
-                  <h5 class="nonme_usuario">Nome do professor</h5>                 
-                  <h5 class="email_remetenye"> email@ifba.edu.br </h5>
-               </span>
-            </div>
-               
-            <span>TIPO</span>
-         </div>
-   
-         <div class="info_arquivo">
-         <div>
-            <h4 class="text_title">Titulo: Titulo do arquivo</h5>
-            <h5 class="text_subject">Assunto: Assunto do arquivo</h5>
-            <h5 class="text_number_of_pages">N° de copias: 20</h5>
-         </div>
-         <h5>Até dd/mm/aaa</h5>
-         </div>
-      </div>
       
-      <div class="container_arquivoRece">
-         <div class="status_arquivo">
-
-         </div>
-
-         <div class="identificacao_envio">
-            <div class="ideti_remetente">
-               <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
-
-               <span>
-                  <h5 class="nonme_usuario">Nome do professor</h5>                 
-                  <h5 class="email_remetenye"> email@ifba.edu.br </h5>
-               </span>
+            <div class="info_arquivo">
+               <div>
+                  <h4 class="text_title">Titulo: Titulo do arquivo</h5>
+                  <h5 class="text_subject">Assunto: Assunto do arquivo</h5>
+                  <h5 class="text_number_of_pages">N° de copias: 20</h5>
+                  <h5>Até dd/mm/aaa</h5>
+               </div>
             </div>
-               
-            <span>TIPO</span>
-         </div>
-   
-         <div class="info_arquivo">
-         <div>
-            <h4 class="text_title">Titulo: Titulo do arquivo</h5>
-            <h5 class="text_subject">Assunto: Assunto do arquivo</h5>
-            <h5 class="text_number_of_pages">N° de copias: 20</h5>
-         </div>
-         <h5>Até dd/mm/aaa</h5>
-         </div>
-      </div>
-      
-      <div class="container_arquivoRece">
-         <div class="status_arquivo">
-
-         </div>
-
-         <div class="identificacao_envio">
-            <div class="ideti_remetente">
-               <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
-
-               <span>
-                  <h5 class="nonme_usuario">Nome do professor</h5>                 
-                  <h5 class="email_remetenye"> email@ifba.edu.br </h5>
-               </span>
-            </div>
-               
-            <span>TIPO</span>
-         </div>
-   
-         <div class="info_arquivo">
-         <div>
-            <h4 class="text_title">Titulo: Titulo do arquivo</h5>
-            <h5 class="text_subject">Assunto: Assunto do arquivo</h5>
-            <h5 class="text_number_of_pages">N° de copias: 20</h5>
-         </div>
-         <h5>Até dd/mm/aaa</h5>
-         </div>
-      </div>
-      
-      <div class="container_arquivoRece">
-         <div class="status_arquivo">
-
-         </div>
-
-         <div class="identificacao_envio">
-            <div class="ideti_remetente">
-               <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
-
-               <span>
-                  <h5 class="nonme_usuario">Nome do professor</h5>                 
-                  <h5 class="email_remetenye"> email@ifba.edu.br </h5>
-               </span>
-            </div>
-               
-            <span>TIPO</span>
-         </div>
-   
-         <div class="info_arquivo">
-         <div>
-            <h4 class="text_title">Titulo: Titulo do arquivo</h5>
-            <h5 class="text_subject">Assunto: Assunto do arquivo</h5>
-            <h5 class="text_number_of_pages">N° de copias: 20</h5>
-         </div>
-         <h5>Até dd/mm/aaa</h5>
-         </div>
-      </div>
-      
-      <div class="container_arquivoRece">
-         <div class="status_arquivo">
-
-         </div>
-
-         <div class="identificacao_envio">
-            <div class="ideti_remetente">
-               <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
-
-               <span>
-                  <h5 class="nonme_usuario">Nome do professor</h5>                 
-                  <h5 class="email_remetenye"> email@ifba.edu.br </h5>
-               </span>
-            </div>
-               
-            <span>TIPO</span>
-         </div>
-   
-         <div class="info_arquivo">
-         <div>
-            <h4 class="text_title">Titulo: Titulo do arquivo</h5>
-            <h5 class="text_subject">Assunto: Assunto do arquivo</h5>
-            <h5 class="text_number_of_pages">N° de copias: 20</h5>
-         </div>
-         <h5>Até dd/mm/aaa</h5>
-         </div>
+         </a>
       </div>
    </main>
 </body>

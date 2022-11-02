@@ -1,7 +1,7 @@
 .nova_notificacao{
    background-color: #314E02;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    color: #fff;
    font-size: 10pt;
    width: 100vw;
@@ -13,17 +13,29 @@
    border: .4px solid #fff;
 }
 
-.nova_notificacao div:first-child{
-   border-right: 1px #fff solid ;
+.nova_notificacao div{
+   display: flex;
+}
+
+.info_notificacao{
+   width: 90%;
+}
+
+.nova_notificacao .icon_style{
+   border-right: 1px #fff solid;
+   margin: auto 0 auto 1rem;
    width: 20%;
 }
 
-.nova_notificacao div{
-   display: flex;
-   margin: auto 2.3rem;
+.nova_notificacao .icon_style p{
+   margin: auto;
 }
 
-.nova_notificacao div p{
+.nova_notificacao .info_arquivo_style{
+   margin: auto;
+}
+
+.nova_notificacao .info_add p{
    margin: auto .3rem;
    
 }
@@ -33,9 +45,10 @@
    margin: auto 1rem;
 }
 
-.nova_notificacao div:last-child span{
-   color: red;
-   background-color: #A40C0C;
+/* Style para notificação não visualizada */
+.nova_notificacao .info_add span{
+   color: #e65f5f;
+   background-color: #5c0a0a;
    width: 1.7rem;
    text-align: center;
    padding: .3rem;

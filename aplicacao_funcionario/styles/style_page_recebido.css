@@ -1,0 +1,84 @@
+main{
+   display: initial;
+}
+
+.content_container{
+   display: flex;
+   margin: 7rem auto;
+   justify-content: space-around;
+   width: 75%;
+
+}
+
+.info_arquivo{
+   color: #fff;
+   display: block;
+   text-align: center;
+   line-height: 3rem;
+   width: 100%;
+}
+
+.info_arquivo h2{
+   font-size: 16pt;
+}
+
+.info_arquivo h3{
+   font-size: 14pt;
+}
+
+.info_arquivo h4{
+   font-size: 12pt;
+}
+
+.arquivo_recebido{
+   margin: 10rem auto;
+}
+
+.info_arquivo .info_limites{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.info_arquivo .info_remetente{
+   text-align: right;
+   line-height: 1.4rem;
+}
+
+.info_arquivo .btn_negar{
+   border: solid 2px #DD6F6F;
+   background-color: transparent;
+   color: #fff;
+   border-radius: 2px;
+   width: 12rem;
+   height: 2rem;
+   font-size: 12pt;
+   transition: .2s;
+}
+
+.info_arquivo .btn_negar:hover{
+   background-color: #DD6F6F;
+   color: rgb(46, 4, 4);
+   cursor: pointer;
+   transition: .2s;
+}
+
+.info_arquivo .btn_concluido{
+   border: solid 2px #BEF6CB;
+   background-color: transparent;
+   color: #fff;
+   border-radius: 2px;
+   width: 12rem;
+   height: 2rem;
+   font-size: 12pt;
+}
+
+.info_arquivo .btn_concluido:hover{
+   background-color: #BEF6CB;
+   color: #03240b;
+   cursor: pointer;
+   transition: .2s;
+}
+
+.info_arquivo button{
+   margin: 4rem 0;
+}

@@ -25,3 +25,8 @@ body{
 body main{
    margin-top: 4rem;
 }
+
+main a{
+   text-decoration: none;
+   color: #000;
+}

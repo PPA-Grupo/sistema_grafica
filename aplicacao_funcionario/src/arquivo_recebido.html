@@ -4,10 +4,11 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Notificações</title>
+   <title>Arquivo recebido</title>
    <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/style_page_recebido.css">
    <script src="../js/menu.js" defer></script>
-
+   <script src="../js/popup_page_recebido.js" defer></script>
 </head>
 <body>
    <header>
@@ -85,28 +86,45 @@
       </nav>
    </header>
    <main>
-         <div class="container_notificacoes">
-            <div class="nova_notificacao">
-               <div class="icon_style">
-                  <img src="../image/icon-profile.svg" alt="Avatar do perfil "/>
-                  <p>Nome do remetente</p>
-               </div>
-
-               <div class="info_notificacao">
-                  <div class="info_arquivo_style">
-                     <h3>Avaliação de português 3º ano</h3>
-                  </div>
-                  <div class="info_arquivo_style">
-                     <h4>Atividade avaliativa para a turma 732 do curso técnico em informática</h4>
-                  </div>
-               </div>
-               <div class="info_add">
-                  <p>10:40</p>
-                  <p>Hoje</p>
-                  <span>1</span>
-               </div>
-            </div>
+      <div class="content_container">
+         <div calss="arquivo_recebido">
+            <img src="../image/icon_pdf.png" alt="Arquivo recebido para impressão">
          </div>
+   
+         <div class="info_arquivo">
+            <h2>Título: Título do arquivo</h2>
+            <h3>Assunto: Aqui vai o assunto tratado no arquivo</h3>
+            
+            <div class="info_limites">
+               <h4>Prazo estipulado: 00/00/0000</h4>
+               <h4>Número de cópias: Nº</h4>
+            </div>
+            
+            <div class="info_remetente">
+               <h4>Nome do Professor remetente</h4>
+               <h4>example@ifba.edu.br</h4>
+            </div>
+
+            <button class="btn_negar" name="btn_negar" id="btn_negar">Negar impressão</button>
+            <a href="../src/arquivo_impresso.html"><button class="btn_concluido" name="btn_concluido" id="btn_concluido">Impressão concluída</button></a>
+         </div>
+      </div>
    </main>
+
+   <!-- Popup para negação de impressão -->
+   <div class="div_popup">
+      <div class="popup">
+         <div class="popup_close"> X </div>
+         <div class="popup_container">
+            <h3>Qual o motivo da sua rejeição a essa impressão?</h3>
+            <form action="">
+               <textarea name="mensagem_esclarecimento" id="mensagem_esclarecimento" cols="30" rows="10">
+               </textarea>
+
+               <button type="submit" name="enviar" value="Enviar" class="popup_button" id="enviar">Enviar</button>
+            </form>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
