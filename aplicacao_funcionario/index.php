@@ -83,6 +83,8 @@
          
       </nav>
    </header>
+
+   <!-- menu Drop-Down com informações de login do usuário -->
    <div class="action">
       <div class="profile" onclick="menuDropDown()">
          <img src="./image/icon-profile.svg">
@@ -126,6 +128,56 @@
             </div>
          </a>
       </div>
+
+      <?php
+         include "./src/config.php";
+
+         //realiza query de consulta
+         $result = $conn->query("SELECT * FROM Arquivo;");
+         //guarda essa query na variavel $row
+         $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+         // echo print_r($row);
+
+         //array para gerar cards de notificações
+         foreach ($row as $item) {
+           //Caso a situação do Documento for 1 (Mas pode ser alterado para "Entregue"), ele será exibido nas notificações.
+           if ($item["situacao"] == "0") { ?>
+            
+            <div class="container_arquivoRece">
+                <div class="status_arquivo">
+
+                </div>
+
+               <a href="./src/arquivo_recebido.html">
+                  <div class="identificacao_envio">
+                     <div class="ideti_remetente">
+                        <img class="icon_person" src = "./image/icons8-pessoa-do-sexo-masculino-90.png" alt="icon do avatar de perfil">
+
+                        <span>
+                           <h5 class="nonme_usuario">Nome do professor</h5>                 
+                           <h5 class="email_remetenye"> email@ifba.edu.br </h5>
+                        </span>
+                     </div>
+                     
+                     <span>TIPO</span>
+                  </div>
+         
+                  <div class="info_arquivo">
+                     <div>
+                           <h4 class="text_title"><?= $item["titulo"] ?></h5>
+                           <h5 class="text_subject">Assunto: <?= $item["assunto"] ?></h5>
+                           <h5 class="text_number_of_pages">N° de copias: <?= $item["qtd_impressao"] ?></h5>
+                           <h5>Até <?= $item["data_entrega"] ?></h5>
+                     </div>
+                     
+                  </div>
+               </a>
+            </div>
+            
+            <?php }
+            }
+         ?>
    </main>
 </body>
 </html>

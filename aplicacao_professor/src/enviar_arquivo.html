@@ -13,7 +13,7 @@
    <header>
       <nav>
          <div class="menu_container">
-            <a href="../index.html">
+            <a href="../index.php">
                <img src="../image/icon-home.svg" alt="Botão home" id="btnHome">
             </a>
 
@@ -24,7 +24,7 @@
 
             <ul>
                <li> 
-                  <a href="../src/page_impressos.html"> Impressos 
+                  <a href="../index.php"> Impressos 
                   </a>   
                </li>
                <li> 
@@ -40,10 +40,8 @@
             <div class="notificacion_profile">
                <a href="../src/notificacoes.html"><img src="../image/icon-notification.svg" alt="Icone de notificação">
                </a>
-               <a href="#"><img src="../image/icon-profile.svg" alt="Icone do perfil">
-               </a>
+               <img src="../image/icon-profile.svg" alt="Icone do perfil">
             </div>
-            
          </div>
          
       </nav>
@@ -64,47 +62,49 @@
 
    <main>
       <!-- Campo de arquivos recebidos -->
-      <div class="container_titlAssun">
-         <label for="">Título: </label>
-         <input type="text" name="titulo" id="titulo" placeholder="Adicione um título"/>
-         <br/>
-         <label for="">Assunto: </label>
-         <input type="text" name="assunto" id="assunto" placeholder="Informe o assunto do arquivo"/> 
-      </div>         
+      <form action="handleFileRequest.php" method="POST" enctype="multipart/form-data">
+         <div class="container_titlAssun">
+            <label for="">Título: </label>
+            <input type="text" name="titulo" id="titulo" placeholder="Adicione um título"/>
+            <br/>
+            <label for="">Assunto: </label>
+            <input type="text" name="assunto" id="assunto" placeholder="Informe o assunto do arquivo"/> 
+         </div>         
 
-      <div class="info_envio">
-         <div>
+         <div class="info_envio">
             <div>
-               <label for="cars">Tipo do documento:</label> 
-               <br/>
-               <select id="tipo_docs">
-                  <option value="prova" >Prova </option>
-                  <option value="avaliacao"> Avaliação </option>
-                  <option value="apostila"> Apostila </option>
-               </select>
+               <div>
+                  <label for="cars">Tipo do documento:</label> 
+                  <br/>
+                  <select id="tipo_docs">
+                     <option value="prova" >Prova </option>
+                     <option value="avaliacao"> Avaliação </option>
+                     <option value="apostila"> Apostila </option>
+                  </select>
+               </div>
+
+               <div>
+                  <legend>Qual a cor das impressões:</legend>
+                  <input type="radio" name="cor" id="preto_branco" placeholder="Preto e branco" checked/> 
+                  <label for="preto_branco">Preto e branco</label>
+                  <input type="radio" name="cor" id="colorido" placeholder="Colorido"/>
+                  <label for="colorido">Colorido</label>
+               </div>
+               
             </div>
-
-            <div>
-               <legend>Qual a cor das impressões:</legend>
-               <input type="radio" name="cor" id="preto_branco" placeholder="Preto e branco" checked/> 
-               <label for="preto_branco">Preto e branco</label>
-               <input type="radio" name="cor" id="colorido" placeholder="Colorido"/>
-               <label for="colorido">Colorido</label>
+         
+            <div class="div_numCopia">
+               <input type="number" name="nCopias" placeholder="Nº de cópias:">
+               <input type="date" name="date">
             </div>
             
          </div>
-       
-         <div class="div_numCopia">
-            <input type="number" placeholder="Nº de cópias:">
-            <input type="date">
-         </div>
-         
-      </div>
 
-      <div class="enviar_arquivo">  
-         <input type="file" name="upload_pdf" id="upload_pdf" accept=".pdf"/>
-         <input type="submit" name="enviar" value="Enviar" id="button_enviar"/>   
-      </div>
+         <div class="enviar_arquivo">  
+            <input type="file" name="file" id="upload_pdf" accept=".pdf"/>
+            <input type="submit" name="submit" value="Enviar" id="button_enviar"/>   
+         </div>
+      </form>
    </main>
 </body>
 </html>
